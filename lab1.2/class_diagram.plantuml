@@ -61,6 +61,14 @@ class Tour_Tourists {
     tourist_id: Integer,
 }
 
+class Reviews {
+    id: Integer,
+    tour_id: String,
+    user_id: String,
+    stars: Integer,
+    comment: String,
+}
+
 class Conversations {
     id: Integer,
     name: String,
@@ -82,6 +90,13 @@ class News {
     hotel_id: Integer,
     restaurant_id: Integer,
     vist_location_id: Integer,
+}
+
+class Bookings {
+    id: Integer,
+    tour_id: String,
+    user_id: String,
+    status: String,
 }
 
 @enduml
