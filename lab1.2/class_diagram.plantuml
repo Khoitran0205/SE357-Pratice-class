@@ -1,0 +1,23 @@
+@startuml Lab1.2_class_diagram
+
+class Users {
+    id: Integer,
+    username: String,
+    password: String,
+    firstName: String,
+    lastName: String,
+    address: String,
+    phone_number: String,
+}
+
+class Users {
+    id: Integer,
+    username: String,
+    password: String,
+    firstName: String,
+    lastName: String,
+    address: String,
+    phone_number: String,
+}
+
+@enduml
