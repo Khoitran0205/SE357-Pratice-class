@@ -34,7 +34,7 @@ class Hotels {
     phone_number: String,
 }
 
-class Vist_Locations {
+class VistLocations {
     id: Integer,
     name: String,
     location_id: Integer,
@@ -49,16 +49,77 @@ class Tours {
     end_date: Date,
 }
 
-class Tour_Locations {
+class TourLocations {
     id: Integer,
     tour_id: Integer,
-    location_id: Integer,
+    vist_location_id: Integer,
+    restaurant_id: Integer,
+    hotel_id: Integer,
+    start_time: Date,
+    end_time: Date,
 }
 
-class Tour_Tourists {
+class TourTourists {
     id: Integer,
     tour_id: Integer,
     tourist_id: Integer,
 }
+
+class Reviews {
+    id: Integer,
+    tour_id: String,
+    user_id: String,
+    stars: Integer,
+    comment: String,
+}
+
+class Conversations {
+    id: Integer,
+    name: String,
+    createdAt: Date,
+    image: String,
+}
+
+class ConversationMembers {
+    id: Integer,
+    conversation_id: Integer,
+    user_id: Integer,
+}
+
+class News {
+    id: Integer,
+    title: String,
+    content: String,
+    location_id: Integer,
+    hotel_id: Integer,
+    restaurant_id: Integer,
+    vist_location_id: Integer,
+}
+
+class Bookings {
+    id: Integer,
+    tour_id: String,
+    user_id: String,
+    status: String,
+}
+
+Users "1" *-- "n" Bookings
+Conversations "1" *-- "n" ConversationMembers
+Tours "1" *-- "n" Reviews
+Tours "1" *-- "n" TourTourists
+Tours "1" *-- "n" TourLocations
+Tours "1" o-- "n" Locations
+News --> Locations
+News --> Hotels
+News --> Restaurants
+News --> VistLocations
+TourLocations --> Hotels
+TourLocations --> Restaurants
+TourLocations --> VistLocations
+Reviews --> Users
+TourTourists --> Users
+ConversationMembers --> Users
+Bookings --> Tours
+
 
 @enduml
