@@ -13,7 +13,7 @@
     -Hỗ trợ kỹ thuật và cộng đồng người dùng: Kiểm tra xem có sẵn sự hỗ trợ kỹ thuật và cộng đồng người dùng đáng tin cậy cho công cụ bạn chọn.
 
 2. Are there any drawbacks to using certain tools in requirements engineering activities?
-    Có một số hạn chế và hạn chế khi sử dụng các công cụ trong hoạt động kỹ thuật yêu cầu. Dưới đây là một số hạn chế phổ biến:
+Có một số hạn chế và hạn chế khi sử dụng các công cụ trong hoạt động kỹ thuật yêu cầu. Dưới đây là một số hạn chế phổ biến:
     -Phức tạp và khó sử dụng: Một số công cụ có giao diện người dùng phức tạp và khó sử dụng, đặc biệt đối với người mới học hoặc người không chuyên về lĩnh vực này. Điều này có thể dẫn đến sự khó khăn trong việc áp dụng chúng hiệu quả.
     -Tích hợp khó khăn: Một số công cụ có thể gặp khó khăn khi tích hợp với các công cụ khác trong quy trình phát triển. Điều này có thể gây ra sự gián đoạn trong quy trình làm việc và làm tăng công sức làm việc.
     -Cần đào tạo: Sử dụng một số công cụ đòi hỏi thời gian và nguồn lực để đào tạo nhân viên. Nếu không có sự đào tạo, người dùng có thể không tận dụng được tối đa các tính năng của công cụ.
@@ -36,12 +36,12 @@
     -Cộng đồng người dùng và danh tiếng: Kiểm tra danh tiếng của công cụ trong cộng đồng người dùng và xem xét các đánh giá và phản hồi từ người dùng khác.
 
 4. How can tools enable distributed, global requirements engineering activities? What are the drawbacks in this regard?
-    Công cụ có thể hỗ trợ hoạt động kỹ thuật yêu cầu phân tán và toàn cầu bằng nhiều cách, sau đây là một số cách phổ biến:
+Công cụ có thể hỗ trợ hoạt động kỹ thuật yêu cầu phân tán và toàn cầu bằng nhiều cách, sau đây là một số cách phổ biến:
     -Truy cập từ xa: Công cụ kỹ thuật yêu cầu có thể được truy cập từ xa, cho phép các thành viên của nhóm làm việc từ bất kỳ đâu trên thế giới. Điều này tạo điều kiện thuận lợi cho làm việc từ xa và hợp tác toàn cầu.
     -Chia sẻ và cộng tác: Công cụ cho phép chia sẻ và cộng tác trực tuyến trên tài liệu yêu cầu. Nhóm có thể làm việc chung trên các tài liệu, cập nhật chúng và đánh giá các thay đổi.
     -Quản lý phiên bản và lịch sử: Công cụ có khả năng quản lý phiên bản và lịch sử của tài liệu yêu cầu, giúp theo dõi thay đổi và tránh mất thông tin quan trọng.
     -Thời gian thực: Một số công cụ cho phép làm việc trong thời gian thực, giúp nhóm làm việc cùng nhau một cách hiệu quả, bất kể họ ở đâu trên thế giới.
-    Khi các công cụ hỗ trợ hoạt động kỹ thuật yêu cầu phân tán và toàn cầu cũng có một số nhược điểm như sau:
+Khi các công cụ hỗ trợ hoạt động kỹ thuật yêu cầu phân tán và toàn cầu cũng có một số nhược điểm như sau:
     -Khả năng đồng thuận: Giao tiếp từ xa có thể làm giảm khả năng đồng thuận và hiểu rõ giữa các thành viên trong nhóm. Sự hiểu biết sâu hơn về yêu cầu có thể bị mất.
     -Vấn đề về múi giờ: Khi làm việc với nhóm ở các múi giờ khác nhau, việc lên lịch cuộc họp và tương tác thời gian thực có thể trở nên khó khăn.
     -Bảo mật và quyền riêng tư: Trong môi trường phân tán và toàn cầu, quản lý bảo mật và quyền riêng tư có thể trở nên phức tạp hơn. Cần có biện pháp đảm bảo an toàn thông tin.
