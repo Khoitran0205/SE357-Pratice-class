@@ -61,4 +61,27 @@ class Tour_Tourists {
     tourist_id: Integer,
 }
 
+class Conversations {
+    id: Integer,
+    name: String,
+    createdAt: Date,
+    image: String,
+}
+
+class Conversation_Members {
+    id: Integer,
+    conversation_id: Integer,
+    user_id: Integer,
+}
+
+class News {
+    id: Integer,
+    title: String,
+    content: String,
+    location_id: Integer,
+    hotel_id: Integer,
+    restaurant_id: Integer,
+    vist_location_id: Integer,
+}
+
 @enduml
