@@ -52,7 +52,11 @@ class Tours {
 class Tour_Locations {
     id: Integer,
     tour_id: Integer,
-    location_id: Integer,
+    vist_location_id: Integer,
+    restaurant_id: Integer,
+    hotel_id: Integer,
+    start_time: Date,
+    end_time: Date,
 }
 
 class Tour_Tourists {
