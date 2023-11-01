@@ -1,0 +1,37 @@
+@startuml
+left to right direction
+actor Hướng_dẫn_viên_du_lịch as HDV
+actor Khách_du_lịch as Khách
+
+rectangle Hệ_thống {
+  usecase (Đăng nhập) as UC_Dang_nhap
+  usecase (Đăng ký) as UC_Dang_ky
+  usecase (Hướng dẫn thông tin địa điểm) as UC_HD_Dia_diem
+  usecase (Hướng dẫn trực tiếp qua video) as UC_HD_Video
+  usecase (Hướng dẫn địa phương) as UC_HD_Dia_phuong
+  usecase (Cung cấp thông tin thời tiết) as UC_Thoi_tiet
+  usecase (Cung cấp thông tin về ẩm thực) as UC_Ẩm_thực
+  usecase (Đánh giá chuyến đi) as UC_Danh_gia
+  usecase (Quản lý lịch trình) as UC_Lich_trinh
+  usecase (Quản lý hành khách) as UC_Hanh_khach
+  usecase (Cung cấp dịch vụ khẩn cấp) as UC_Khan_cap
+
+  HDV -- UC_HD_Dia_diem
+  HDV -- UC_HD_Video
+  HDV -- UC_HD_Dia_phuong
+  HDV -- UC_Thoi_tiet
+  HDV -- UC_Ẩm_thực
+  Khách -- UC_Danh_gia
+  HDV -- UC_Lich_trinh
+  HDV -- UC_Hanh_khach
+  HDV -- UC_Khan_cap
+  Khách -- UC_Khan_cap
+  Khách -- UC_Dang_nhap
+  HDV -- UC_Dang_nhap
+  Khách -- UC_Dang_ky
+  HDV -- UC_Dang_ky
+}
+
+
+
+@enduml
