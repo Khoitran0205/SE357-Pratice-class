@@ -1,0 +1,17 @@
+@startuml guideLocationInfo_activity_diagram
+|Hướng dẫn viên|
+start
+:Chọn địa điểm cần hướng dẫn;
+|Hệ thống|
+if (Địa điểm đã chọn?) then (yes)
+  |Cơ sở dữ liệu|
+  :Truy vấn thông tin về địa điểm;
+  :Lấy thông tin về địa điểm từ cơ sở dữ liệu;
+  |Hệ thống|
+  :Hiển thị thông tin địa điểm cho hướng dẫn viên;
+else (no)
+  :Hiển thị thông báo lỗi;
+endif
+
+stop
+@enduml
