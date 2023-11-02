@@ -1,0 +1,25 @@
+@startuml review_sequence_diagram
+
+actor NgườiDùng
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhĐánhGiá
+
+NgườiDùng -> HệThống: Kết thúc chuyến đi
+activate HệThống
+
+HệThống -> HệThống: Chọn chức năng đánh giá chuyến đi
+HệThống --> MànHìnhĐánhGiá: Hiển thị form đánh giá
+deactivate HệThống
+
+NgườiDùng -> MànHìnhĐánhGiá: Nhập đánh giá và nhận xét
+activate MànHìnhĐánhGiá
+
+MànHìnhĐánhGiá -> CơSởDữLiệu: Lưu đánh giá và nhận xét vào cơ sở dữ liệu
+activate CơSởDữLiệu
+CơSởDữLiệu --> MànHìnhĐánhGiá: Đánh giá đã được ghi nhận
+deactivate CơSởDữLiệu
+
+deactivate MànHìnhĐánhGiá
+
+@enduml
