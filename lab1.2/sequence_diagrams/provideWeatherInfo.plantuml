@@ -1,0 +1,24 @@
+@startuml provideWeatherInfo_sequence_diagram
+
+actor HướngDẫnViên
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhThôngTinThờiTiết
+
+HướngDẫnViên -> HệThống: Chọn chức năng xem thông tin thời tiết
+activate HệThống
+
+HệThống -> HệThống: Kiểm tra yêu cầu thông tin thời tiết
+alt Yêu cầu thông tin thời tiết
+  HệThống -> CơSởDữLiệu: Truy vấn dữ liệu thời tiết
+  activate CơSởDữLiệu
+  CơSởDữLiệu --> HệThống: Lấy thông tin thời tiết từ dịch vụ thời tiết
+  deactivate CơSởDữLiệu
+  HệThống --> MànHìnhThôngTinThờiTiết: Hiển thị thông tin thời tiết cho người dùng
+else Yêu cầu không hợp lệ
+  HệThống --> MànHìnhThôngTinThờiTiết: Hiển thị thông báo lỗi - Yêu cầu không hợp lệ
+end
+
+deactivate HệThống
+
+@enduml
