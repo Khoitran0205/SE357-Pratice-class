@@ -1,52 +1,52 @@
 1. What criteria should be used in choosing an appropriate requirements engineering tool?
-    -Mục tiêu và quy mô dự án: Xác định mục tiêu của dự án và quy mô của nó. Một dự án lớn với nhiều thành viên có thể yêu cầu một công cụ mạnh mẽ hơn so với một dự án nhỏ.
-    -Tích hợp với quy trình làm việc hiện tại: Đảm bảo rằng công cụ có thể tích hợp dễ dàng vào quy trình làm việc của tổ chức bạn, giúp tối ưu hóa hiệu suất làm việc.
-    -Hỗ trợ cho ngôn ngữ yêu cầu: Đảm bảo rằng công cụ hỗ trợ ngôn ngữ và kỹ thuật bạn sử dụng để mô tả yêu cầu, ví dụ: UML, SysML, hoặc Natural Language.
-    -Giao diện người dùng (UI) và trải nghiệm người dùng: Sự dễ sử dụng của giao diện người dùng cũng quan trọng, vì nó ảnh hưởng đến sự hiệu quả của việc tạo và quản lý yêu cầu.
-    -Hỗ trợ cho tạo và quản lý yêu cầu: Công cụ nên cung cấp các tính năng để tạo, quản lý, theo dõi, và biến đổi yêu cầu theo thời gian.
-    -Khả năng hợp tác và chia sẻ: Công cụ nên cho phép nhiều người làm việc cùng một thời điểm và chia sẻ thông tin dễ dàng.
-    -Khả năng kiểm tra và xác minh yêu cầu: Công cụ nên cung cấp khả năng kiểm tra và xác minh tính toàn vẹn, nhất quán, và hợp lý của yêu cầu.
-    -Hỗ trợ cho theo dõi thay đổi: Công cụ nên giúp theo dõi và quản lý các thay đổi trong yêu cầu theo thời gian.
-    -Tích hợp với công cụ khác: Đảm bảo rằng công cụ có thể tích hợp với các công cụ khác mà bạn có thể sử dụng trong quy trình phát triển.
-    -Hiệu suất và sự ổn định: Đảm bảo rằng công cụ hoạt động một cách ổn định và có hiệu suất đủ để xử lý tất cả yêu cầu của dự án.
-    -Giá cả và chi phí liên quan: Xem xét khả năng tài chính của tổ chức để đảm bảo rằng bạn có thể mua và duy trì công cụ trong thời gian dài.
-    -Hỗ trợ kỹ thuật và cộng đồng người dùng: Kiểm tra xem có sẵn sự hỗ trợ kỹ thuật và cộng đồng người dùng đáng tin cậy cho công cụ bạn chọn.
+    - Mục tiêu và quy mô dự án: Xác định mục tiêu của dự án và quy mô của nó. Một dự án lớn với nhiều thành viên có thể yêu cầu một công cụ mạnh mẽ hơn so với một dự án nhỏ.
+    - Tích hợp với quy trình làm việc hiện tại: Đảm bảo rằng công cụ có thể tích hợp dễ dàng vào quy trình làm việc của tổ chức bạn, giúp tối ưu hóa hiệu suất làm việc.
+    - Hỗ trợ cho ngôn ngữ yêu cầu: Đảm bảo rằng công cụ hỗ trợ ngôn ngữ và kỹ thuật bạn sử dụng để mô tả yêu cầu, ví dụ: UML, SysML, hoặc Natural Language.
+    - Giao diện người dùng (UI) và trải nghiệm người dùng: Sự dễ sử dụng của giao diện người dùng cũng quan trọng, vì nó ảnh hưởng đến sự hiệu quả của việc tạo và quản lý yêu cầu.
+    - Hỗ trợ cho tạo và quản lý yêu cầu: Công cụ nên cung cấp các tính năng để tạo, quản lý, theo dõi, và biến đổi yêu cầu theo thời gian.
+    - Khả năng hợp tác và chia sẻ: Công cụ nên cho phép nhiều người làm việc cùng một thời điểm và chia sẻ thông tin dễ dàng.
+    - Khả năng kiểm tra và xác minh yêu cầu: Công cụ nên cung cấp khả năng kiểm tra và xác minh tính toàn vẹn, nhất quán, và hợp lý của yêu cầu.
+    - Hỗ trợ cho theo dõi thay đổi: Công cụ nên giúp theo dõi và quản lý các thay đổi trong yêu cầu theo thời gian.
+    - Tích hợp với công cụ khác: Đảm bảo rằng công cụ có thể tích hợp với các công cụ khác mà bạn có thể sử dụng trong quy trình phát triển.
+    - Hiệu suất và sự ổn định: Đảm bảo rằng công cụ hoạt động một cách ổn định và có hiệu suất đủ để xử lý tất cả yêu cầu của dự án.
+    - Giá cả và chi phí liên quan: Xem xét khả năng tài chính của tổ chức để đảm bảo rằng bạn có thể mua và duy trì công cụ trong thời gian dài.
+    - Hỗ trợ kỹ thuật và cộng đồng người dùng: Kiểm tra xem có sẵn sự hỗ trợ kỹ thuật và cộng đồng người dùng đáng tin cậy cho công cụ bạn chọn.
 
 2. Are there any drawbacks to using certain tools in requirements engineering activities?
 Có một số hạn chế và hạn chế khi sử dụng các công cụ trong hoạt động kỹ thuật yêu cầu. Dưới đây là một số hạn chế phổ biến:
-    -Phức tạp và khó sử dụng: Một số công cụ có giao diện người dùng phức tạp và khó sử dụng, đặc biệt đối với người mới học hoặc người không chuyên về lĩnh vực này. Điều này có thể dẫn đến sự khó khăn trong việc áp dụng chúng hiệu quả.
-    -Tích hợp khó khăn: Một số công cụ có thể gặp khó khăn khi tích hợp với các công cụ khác trong quy trình phát triển. Điều này có thể gây ra sự gián đoạn trong quy trình làm việc và làm tăng công sức làm việc.
-    -Cần đào tạo: Sử dụng một số công cụ đòi hỏi thời gian và nguồn lực để đào tạo nhân viên. Nếu không có sự đào tạo, người dùng có thể không tận dụng được tối đa các tính năng của công cụ.
-    -Chi phí cao: Các công cụ chuyên nghiệp có thể có chi phí đầu tư ban đầu và chi phí duy trì cao. Điều này có thể là một hạn chế cho các tổ chức có nguồn lực hạn chế.
-    -Khả năng mất dữ liệu: Nếu công cụ gặp sự cố hoặc không được sao lưu thường xuyên, có nguy cơ mất dữ liệu quan trọng về yêu cầu, điều này có thể dẫn đến sự đánh mất thông tin quan trọng.
-    -Không phù hợp cho mọi loại dự án: Một số công cụ có giới hạn về mức độ phù hợp với loại dự án cụ thể. Ví dụ, một công cụ có thể tốt cho dự án phần mềm nhỏ, nhưng không phù hợp cho dự án phức tạp hệ thống nhúng.
-    -Các vấn đề về sự bảo mật và quyền riêng tư: Nếu không được cấu hình và quản lý đúng cách, thông tin quan trọng về yêu cầu có thể bị tiết lộ hoặc thất lạc.
-    -Khả năng hỗ trợ kỹ thuật không đủ: Một số công cụ có sự hỗ trợ kỹ thuật kém, điều này có thể gây khó khăn khi cần giải quyết các vấn đề kỹ thuật hoặc cần sự hỗ trợ.
+    - Phức tạp và khó sử dụng: Một số công cụ có giao diện người dùng phức tạp và khó sử dụng, đặc biệt đối với người mới học hoặc người không chuyên về lĩnh vực này. Điều này có thể dẫn đến sự khó khăn trong việc áp dụng chúng hiệu quả.
+    - Tích hợp khó khăn: Một số công cụ có thể gặp khó khăn khi tích hợp với các công cụ khác trong quy trình phát triển. Điều này có thể gây ra sự gián đoạn trong quy trình làm việc và làm tăng công sức làm việc.
+    - Cần đào tạo: Sử dụng một số công cụ đòi hỏi thời gian và nguồn lực để đào tạo nhân viên. Nếu không có sự đào tạo, người dùng có thể không tận dụng được tối đa các tính năng của công cụ.
+    - Chi phí cao: Các công cụ chuyên nghiệp có thể có chi phí đầu tư ban đầu và chi phí duy trì cao. Điều này có thể là một hạn chế cho các tổ chức có nguồn lực hạn chế.
+    - Khả năng mất dữ liệu: Nếu công cụ gặp sự cố hoặc không được sao lưu thường xuyên, có nguy cơ mất dữ liệu quan trọng về yêu cầu, điều này có thể dẫn đến sự đánh mất thông tin quan trọng.
+    - Không phù hợp cho mọi loại dự án: Một số công cụ có giới hạn về mức độ phù hợp với loại dự án cụ thể. Ví dụ, một công cụ có thể tốt cho dự án phần mềm nhỏ, nhưng không phù hợp cho dự án phức tạp hệ thống nhúng.
+    - Các vấn đề về sự bảo mật và quyền riêng tư: Nếu không được cấu hình và quản lý đúng cách, thông tin quan trọng về yêu cầu có thể bị tiết lộ hoặc thất lạc.
+    - Khả năng hỗ trợ kỹ thuật không đủ: Một số công cụ có sự hỗ trợ kỹ thuật kém, điều này có thể gây khó khăn khi cần giải quyết các vấn đề kỹ thuật hoặc cần sự hỗ trợ.
 
 3. When selecting an open-source tool, what characteristics should you look for?
-    -Giấy phép mã nguồn mở (Open-Source License): Đảm bảo rằng công cụ sử dụng một giấy phép mã nguồn mở phù hợp với mục đích sử dụng của bạn. Điều này đồng nghĩa rằng bạn có quyền sử dụng, sửa đổi và phân phối mã nguồn của công cụ.
-    -Cộng đồng và sự hỗ trợ: Kiểm tra sự tồn tại của một cộng đồng phát triển đang hoạt động và sẵn sàng hỗ trợ. Các dự án mã nguồn mở với cộng đồng lớn thường có nhiều nguồn tài liệu và hỗ trợ kỹ thuật.
-    -Tích hợp và mở rộng dễ dàng: Đảm bảo rằng công cụ có khả năng tích hợp với các công cụ khác trong quy trình phát triển của bạn và có khả năng mở rộng để đáp ứng nhu cầu cụ thể của dự án.
-    -Tính ổn định và bảo trì: Xem xét lịch sử phát triển của công cụ và xem liệu nó được duy trì và cập nhật thường xuyên hay không. Các dự án được phát triển tích cực thường có phiên bản mới để sửa lỗi và cải tiến.
-    -Hướng dẫn và tài liệu: Công cụ nên đi kèm với tài liệu và hướng dẫn đầy đủ để giúp bạn làm quen và sử dụng nó hiệu quả.
-    -Hiệu suất và khả năng mở rộng: Đảm bảo rằng công cụ có hiệu suất đủ để xử lý yêu cầu của dự án và có khả năng mở rộng khi cần thiết.
-    -Khả năng bảo mật: Đảm bảo rằng công cụ được phát triển với sự quan tâm đến bảo mật và có cơ chế bảo mật để bảo vệ dữ liệu của bạn.
-    -Tính linh hoạt: Công cụ nên có khả năng tùy chỉnh để phù hợp với quy trình làm việc của bạn và cho phép bạn áp dụng các tiêu chuẩn yêu cầu cụ thể.
-    -Hệ sinh thái plugin và module: Nếu công cụ hỗ trợ các plugin hoặc module bổ sung, điều này có thể giúp bạn mở rộng chức năng theo nhu cầu cụ thể của dự án.
-    -Cộng đồng người dùng và danh tiếng: Kiểm tra danh tiếng của công cụ trong cộng đồng người dùng và xem xét các đánh giá và phản hồi từ người dùng khác.
+    - Giấy phép mã nguồn mở (Open-Source License): Đảm bảo rằng công cụ sử dụng một giấy phép mã nguồn mở phù hợp với mục đích sử dụng của bạn. Điều này đồng nghĩa rằng bạn có quyền sử dụng, sửa đổi và phân phối mã nguồn của công cụ.
+    - Cộng đồng và sự hỗ trợ: Kiểm tra sự tồn tại của một cộng đồng phát triển đang hoạt động và sẵn sàng hỗ trợ. Các dự án mã nguồn mở với cộng đồng lớn thường có nhiều nguồn tài liệu và hỗ trợ kỹ thuật.
+    - Tích hợp và mở rộng dễ dàng: Đảm bảo rằng công cụ có khả năng tích hợp với các công cụ khác trong quy trình phát triển của bạn và có khả năng mở rộng để đáp ứng nhu cầu cụ thể của dự án.
+    - Tính ổn định và bảo trì: Xem xét lịch sử phát triển của công cụ và xem liệu nó được duy trì và cập nhật thường xuyên hay không. Các dự án được phát triển tích cực thường có phiên bản mới để sửa lỗi và cải tiến.
+    - Hướng dẫn và tài liệu: Công cụ nên đi kèm với tài liệu và hướng dẫn đầy đủ để giúp bạn làm quen và sử dụng nó hiệu quả.
+    - Hiệu suất và khả năng mở rộng: Đảm bảo rằng công cụ có hiệu suất đủ để xử lý yêu cầu của dự án và có khả năng mở rộng khi cần thiết.
+    - Khả năng bảo mật: Đảm bảo rằng công cụ được phát triển với sự quan tâm đến bảo mật và có cơ chế bảo mật để bảo vệ dữ liệu của bạn.
+    - Tính linh hoạt: Công cụ nên có khả năng tùy chỉnh để phù hợp với quy trình làm việc của bạn và cho phép bạn áp dụng các tiêu chuẩn yêu cầu cụ thể.
+    - Hệ sinh thái plugin và module: Nếu công cụ hỗ trợ các plugin hoặc module bổ sung, điều này có thể giúp bạn mở rộng chức năng theo nhu cầu cụ thể của dự án.
+    - Cộng đồng người dùng và danh tiếng: Kiểm tra danh tiếng của công cụ trong cộng đồng người dùng và xem xét các đánh giá và phản hồi từ người dùng khác.
 
 4. How can tools enable distributed, global requirements engineering activities? What are the drawbacks in this regard?
 Công cụ có thể hỗ trợ hoạt động kỹ thuật yêu cầu phân tán và toàn cầu bằng nhiều cách, sau đây là một số cách phổ biến:
-    -Truy cập từ xa: Công cụ kỹ thuật yêu cầu có thể được truy cập từ xa, cho phép các thành viên của nhóm làm việc từ bất kỳ đâu trên thế giới. Điều này tạo điều kiện thuận lợi cho làm việc từ xa và hợp tác toàn cầu.
-    -Chia sẻ và cộng tác: Công cụ cho phép chia sẻ và cộng tác trực tuyến trên tài liệu yêu cầu. Nhóm có thể làm việc chung trên các tài liệu, cập nhật chúng và đánh giá các thay đổi.
-    -Quản lý phiên bản và lịch sử: Công cụ có khả năng quản lý phiên bản và lịch sử của tài liệu yêu cầu, giúp theo dõi thay đổi và tránh mất thông tin quan trọng.
-    -Thời gian thực: Một số công cụ cho phép làm việc trong thời gian thực, giúp nhóm làm việc cùng nhau một cách hiệu quả, bất kể họ ở đâu trên thế giới.
+    - Truy cập từ xa: Công cụ kỹ thuật yêu cầu có thể được truy cập từ xa, cho phép các thành viên của nhóm làm việc từ bất kỳ đâu trên thế giới. Điều này tạo điều kiện thuận lợi cho làm việc từ xa và hợp tác toàn cầu.
+    - Chia sẻ và cộng tác: Công cụ cho phép chia sẻ và cộng tác trực tuyến trên tài liệu yêu cầu. Nhóm có thể làm việc chung trên các tài liệu, cập nhật chúng và đánh giá các thay đổi.
+    - Quản lý phiên bản và lịch sử: Công cụ có khả năng quản lý phiên bản và lịch sử của tài liệu yêu cầu, giúp theo dõi thay đổi và tránh mất thông tin quan trọng.
+    - Thời gian thực: Một số công cụ cho phép làm việc trong thời gian thực, giúp nhóm làm việc cùng nhau một cách hiệu quả, bất kể họ ở đâu trên thế giới.
 Khi các công cụ hỗ trợ hoạt động kỹ thuật yêu cầu phân tán và toàn cầu cũng có một số nhược điểm như sau:
-    -Khả năng đồng thuận: Giao tiếp từ xa có thể làm giảm khả năng đồng thuận và hiểu rõ giữa các thành viên trong nhóm. Sự hiểu biết sâu hơn về yêu cầu có thể bị mất.
-    -Vấn đề về múi giờ: Khi làm việc với nhóm ở các múi giờ khác nhau, việc lên lịch cuộc họp và tương tác thời gian thực có thể trở nên khó khăn.
-    -Bảo mật và quyền riêng tư: Trong môi trường phân tán và toàn cầu, quản lý bảo mật và quyền riêng tư có thể trở nên phức tạp hơn. Cần có biện pháp đảm bảo an toàn thông tin.
-    -Vấn đề kết nối và độ trễ: Một số vùng có kết nối internet kém và có độ trễ cao, điều này có thể gây khó khăn cho việc làm việc trực tuyến.
-    -Khả năng quản lý và kiểm soát: Quản lý dự án và kiểm soát quá trình làm việc từ xa có thể đòi hỏi sự quản lý cẩn thận và công cụ quản lý dự án phù hợp.
+    - Khả năng đồng thuận: Giao tiếp từ xa có thể làm giảm khả năng đồng thuận và hiểu rõ giữa các thành viên trong nhóm. Sự hiểu biết sâu hơn về yêu cầu có thể bị mất.
+    - Vấn đề về múi giờ: Khi làm việc với nhóm ở các múi giờ khác nhau, việc lên lịch cuộc họp và tương tác thời gian thực có thể trở nên khó khăn.
+    - Bảo mật và quyền riêng tư: Trong môi trường phân tán và toàn cầu, quản lý bảo mật và quyền riêng tư có thể trở nên phức tạp hơn. Cần có biện pháp đảm bảo an toàn thông tin.
+    - Vấn đề kết nối và độ trễ: Một số vùng có kết nối internet kém và có độ trễ cao, điều này có thể gây khó khăn cho việc làm việc trực tuyến.
+    - Khả năng quản lý và kiểm soát: Quản lý dự án và kiểm soát quá trình làm việc từ xa có thể đòi hỏi sự quản lý cẩn thận và công cụ quản lý dự án phù hợp.
 
 5. If an environment does not currently engage in solid requirements engineering practices, should tools be introduced?
 Quyết định giới thiệu các công cụ RE phải dựa trên sự đánh giá cẩn thận về nhu cầu, mục tiêu và những hạn chế của dự án phần mềm và tổ chức. Một số yếu tố cần xem xét là:
