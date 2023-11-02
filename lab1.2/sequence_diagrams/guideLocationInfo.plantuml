@@ -1,0 +1,24 @@
+@startuml guideLocationInfo_sequence_diagram
+
+actor HướngDẫnViên
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhHướngDẫnĐịaĐiểm
+
+HướngDẫnViên -> HệThống: Chọn địa điểm cần hướng dẫn
+activate HệThống
+
+HệThống -> HệThống: Kiểm tra địa điểm đã chọn
+alt Địa điểm đã chọn
+  HệThống -> CơSởDữLiệu: Truy vấn thông tin về địa điểm
+  activate CơSởDữLiệu
+  CơSởDữLiệu --> HệThống: Lấy thông tin về địa điểm từ cơ sở dữ liệu
+  deactivate CơSởDữLiệu
+  HệThống --> MànHìnhHướngDẫnĐịaĐiểm: Hiển thị thông tin địa điểm cho hướng dẫn viên
+else Địa điểm chưa được chọn
+  HệThống --> MànHìnhHướngDẫnĐịaĐiểm: Hiển thị thông báo lỗi
+end
+
+deactivate HệThống
+
+@enduml
