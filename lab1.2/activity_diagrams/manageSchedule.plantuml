@@ -1,0 +1,33 @@
+@startuml manageSchedule_activity_diagram
+|Hướng dẫn viên|
+start
+:Chọn chức năng quản lý lịch trình;
+|Hệ thống|
+|Cơ sở dữ liệu|
+:Truy vấn lịch trình hiện tại từ cơ sở dữ liệu;
+|Hệ thống|
+:Hiển thị lịch trình cho hướng dẫn viên;
+|Hướng dẫn viên|
+:Thay đổi lịch trình;
+|Hệ thống|
+|Cơ sở dữ liệu|
+if (Lịch trình đã thay đổi?) then (yes)
+    :Kiểm tra xem lịch trình mới có trùng với lịch trình hiện tại không?;
+    if (Trùng lịch?) then (yes)
+        |Hệ thống|
+        :Hiển thị thông báo lỗi - Trùng lịch;
+    else (no)
+        |Cơ sở dữ liệu|
+        :Lưu lịch trình mới vào cơ sở dữ liệu;
+        |Hệ thống|
+        :Hiển thị thông báo - Lịch trình đã được cập nhật;
+    endif
+else (no)
+    |Hệ thống|
+    :Hiển thị thông báo - Không có thay đổi lịch trình;
+endif
+|Hướng dẫn viên|
+
+stop
+
+@enduml
