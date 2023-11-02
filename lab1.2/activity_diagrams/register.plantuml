@@ -1,4 +1,4 @@
-@startuml
+@startuml register_activity_diagram
 
 |Người dùng|
 start
