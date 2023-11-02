@@ -1,0 +1,30 @@
+@startuml login_sequence_diagram
+
+actor NgườiDùng
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhĐăngNhập
+
+NgườiDùng -> HệThống: Nhập tên đăng nhập và mật khẩu
+activate HệThống
+
+HệThống -> HệThống: Kiểm tra thông tin đăng nhập
+alt Thông tin hợp lệ
+  HệThống -> CơSởDữLiệu: Kiểm tra tên đăng nhập và mật khẩu
+  activate CơSởDữLiệu
+  alt Đúng tên đăng nhập và mật khẩu
+    CơSởDữLiệu --> HệThống: Đăng nhập thành công
+    HệThống -> MànHìnhĐăngNhập: Hiển thị thông báo đăng nhập thành công
+    deactivate CơSởDữLiệu
+  else Thông tin không đúng
+    CơSởDữLiệu --> HệThống: Hiển thị thông báo lỗi
+    deactivate CơSởDữLiệu
+  end
+else Thông tin không hợp lệ
+  HệThống --> HệThống: Hiển thị thông báo lỗi
+end
+
+HệThống -> MànHìnhĐăngNhập: Hiển thị thông báo lỗi
+deactivate HệThống
+
+@enduml

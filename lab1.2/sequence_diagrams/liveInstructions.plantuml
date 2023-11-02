@@ -1,0 +1,25 @@
+@startuml liveInstructions_sequence_diagram
+
+actor HướngDẫnViên
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhHướngDẫn
+
+HướngDẫnViên -> HệThống: Chọn khách hàng cần hướng dẫn
+activate HệThống
+
+HệThống -> HệThống: Kiểm tra khách hàng đã chọn chưa
+alt Khách hàng đã chọn
+  HệThống -> CơSởDữLiệu: Truy vấn thông tin về khách hàng
+  activate CơSởDữLiệu
+  CơSởDữLiệu --> HệThống: Lấy thông tin về khách hàng từ cơ sở dữ liệu
+  deactivate CơSởDữLiệu
+  HệThống -> HệThống: Bắt đầu cuộc hướng dẫn qua video
+  HệThống -> CơSởDữLiệu: Mở kết nối video
+else Khách hàng chưa chọn
+  HệThống --> MànHìnhHướngDẫn: Hiển thị thông báo lỗi - Khách hàng chưa chọn
+end
+
+deactivate HệThống
+
+@enduml

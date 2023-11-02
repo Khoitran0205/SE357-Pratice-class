@@ -1,0 +1,29 @@
+@startuml register_sequence_diagram
+
+actor NgườiDùng
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhĐăngKý
+
+NgườiDùng -> HệThống: Nhập thông tin đăng ký
+activate HệThống
+
+HệThống -> HệThống: Kiểm tra thông tin đăng ký
+alt Thông tin hợp lệ
+  HệThống -> CơSởDữLiệu: Kiểm tra tên đăng nhập tồn tại
+  activate CơSởDữLiệu
+  alt Tên đăng nhập tồn tại
+    CơSởDữLiệu --> HệThống: Hiển thị thông báo lỗi - Tên đăng nhập đã tồn tại
+    deactivate CơSởDữLiệu
+  else Tên đăng nhập không tồn tại
+    CơSởDữLiệu --> HệThống: Tạo tài khoản và lưu thông tin đăng ký
+    deactivate CơSởDữLiệu
+    HệThống --> MànHìnhĐăngKý: Hiển thị thông báo đăng ký thành công
+  end
+else Thông tin không hợp lệ
+  HệThống --> MànHìnhĐăngKý: Hiển thị thông báo lỗi - Thông tin không hợp lệ
+end
+
+deactivate HệThống
+
+@enduml

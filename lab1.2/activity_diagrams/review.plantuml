@@ -1,0 +1,15 @@
+@startuml review_activity_diagram
+|Người dùng|
+start
+:Kết thúc chuyến đi;
+:Chọn chức năng đánh giá chuyến đi;
+|Hệ thống|
+:Hiển thị form đánh giá;
+|Người dùng|
+:Nhập đánh giá và nhận xét;
+|Cơ sở dữ liệu|
+:Lưu đánh giá và nhận xét vào cơ sở dữ liệu;
+|Hệ thống|
+:Hiển thị thông báo - Đánh giá đã được ghi nhận;
+stop
+@enduml

@@ -1,0 +1,41 @@
+@startuml manageSchedule_sequence_diagram
+
+actor HướngDẫnViên
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhQuảnLýLịchTrình
+
+HướngDẫnViên -> HệThống: Chọn chức năng quản lý lịch trình
+activate HệThống
+
+HệThống -> CơSởDữLiệu: Truy vấn lịch trình hiện tại từ cơ sở dữ liệu
+activate CơSởDữLiệu
+CơSởDữLiệu --> HệThống: Lấy lịch trình hiện tại từ cơ sở dữ liệu
+deactivate CơSởDữLiệu
+
+HệThống --> MànHìnhQuảnLýLịchTrình: Hiển thị lịch trình cho hướng dẫn viên
+
+HướngDẫnViên -> MànHìnhQuảnLýLịchTrình: Thay đổi lịch trình
+activate MànHìnhQuảnLýLịchTrình
+
+MànHìnhQuảnLýLịchTrình -> HệThống: Lịch trình đã thay đổi
+deactivate MànHìnhQuảnLýLịchTrình
+
+HệThống -> CơSởDữLiệu: Kiểm tra xem lịch trình mới có trùng với lịch trình hiện tại không?
+activate CơSởDữLiệu
+
+alt Trùng lịch?
+  CơSởDữLiệu --> HệThống: Hiển thị thông báo lỗi - Trùng lịch
+  deactivate CơSởDữLiệu
+else Lịch trình không trùng
+  HệThống -> CơSởDữLiệu: Lưu lịch trình mới vào cơ sở dữ liệu
+  activate CơSởDữLiệu
+  CơSởDữLiệu --> HệThống: Lịch trình đã được cập nhật
+  deactivate CơSởDữLiệu
+end
+
+HệThống --> HướngDẫnViên: Hiển thị thông báo - Lịch trình đã được cập nhật
+
+deactivate HệThống
+
+@enduml

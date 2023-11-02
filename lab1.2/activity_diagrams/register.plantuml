@@ -1,0 +1,22 @@
+@startuml register_activity_diagram
+
+|Người dùng|
+start
+:Người dùng nhập tên đăng nhập, mật khẩu, họ tên, địa chỉ, số điện thoại, email;
+|Hệ thống|
+if (Thông tin hợp lệ?) then (yes)
+  |Cơ sở dữ liệu|
+  :Cơ sở dữ liệu kiểm tra tên đăng nhập đã tồn tại?;
+  if (Tên đăng nhập đã tồn tại?) then (yes)
+    :Hiển thị thông báo lỗi - Tên đăng nhập đã tồn tại;
+  else (no)
+    :Tạo tài khoản và lưu thông tin đăng ký;
+    :Hiển thị thông báo đăng ký thành công;
+  endif
+else (no)
+  :Hiển thị thông báo lỗi - Thông tin không hợp lệ;
+endif
+
+stop
+
+@enduml

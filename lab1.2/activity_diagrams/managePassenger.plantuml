@@ -1,0 +1,26 @@
+@startuml managePassengers_activity_diagram
+|Hướng dẫn viên|
+start
+:Chọn chức năng quản lý hành khách;
+|Hệ thống|
+|Cơ sở dữ liệu|
+:Truy vấn danh sách hành khách hiện tại;
+|Hệ thống|
+:Hiển thị danh sách hành khách cho hướng dẫn viên;
+|Hướng dẫn viên|
+:Thay đổi thông tin hành khách;
+|Hệ thống|
+|Cơ sở dữ liệu|
+if (Danh sách hành khách đã thay đổi?) then (yes)
+    :Lưu danh sách hành khách mới vào cơ sở dữ liệu;
+    |Hệ thống|
+    :Hiển thị thông báo - Danh sách hành khách đã được cập nhật;
+else (no)
+    |Hệ thống|
+    :Hiển thị thông báo - Không có thay đổi danh sách hành khách;
+endif
+|Hướng dẫn viên|
+
+stop
+
+@enduml

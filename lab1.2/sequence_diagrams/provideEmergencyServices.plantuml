@@ -1,0 +1,30 @@
+@startuml provideEmergencyService_sequence_diagram
+
+actor NgườiDùng
+control HệThống
+entity DịchVụKhẩnCấp
+boundary MànHìnhThôngTinKhẩnCấp
+
+NgườiDùng -> HệThống: Chọn chức năng yêu cầu dịch vụ khẩn cấp
+activate HệThống
+
+HệThống -> HệThống: Chức năng đã chọn?
+alt Chức năng đã chọn
+  HệThống --> MànHìnhThôngTinKhẩnCấp: Người dùng nhập thông tin cần thiết
+else Chức năng chưa chọn
+  HệThống --> MànHìnhThôngTinKhẩnCấp: Hiển thị thông báo lỗi - Chưa chọn chức năng yêu cầu dịch vụ khẩn cấp
+end
+
+HệThống -> DịchVụKhẩnCấp: Gửi yêu cầu dịch vụ khẩn cấp tới dịch vụ khẩn cấp
+activate DịchVụKhẩnCấp
+
+DịchVụKhẩnCấp --> HệThống: Xử lý yêu cầu và cung cấp dịch vụ khẩn cấp
+DịchVụKhẩnCấp --> HệThống: Liên lạc với người dùng để xác nhận thông tin
+deactivate DịchVụKhẩnCấp
+
+HệThống --> MànHìnhThôngTinKhẩnCấp: Xác nhận thông tin với người dùng
+HệThống --> MànHìnhThôngTinKhẩnCấp: Hiển thị thông báo - Dịch vụ khẩn cấp đã được gửi
+
+deactivate HệThống
+
+@enduml
