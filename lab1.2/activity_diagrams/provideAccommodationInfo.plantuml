@@ -1,0 +1,19 @@
+@startuml provideAccommodationInfo_activity_diagram
+
+|Hướng dẫn viên|
+start
+:Chọn chức năng xem thông tin nơi ở;
+
+|Hệ thống|
+if (Yêu cầu thông tin nơi ở?) then (yes)
+    |Cơ sở dữ liệu|
+    :Truy vấn dữ liệu nơi ở;
+    :Lấy thông tin nơi ở;
+    |Hệ thống|
+    :Hiển thị thông tin nơi ở cho hướng dẫn viên;
+else (no)
+    :Hiển thị thông báo lỗi - Yêu cầu không hợp lệ;
+
+endif
+stop
+@enduml
