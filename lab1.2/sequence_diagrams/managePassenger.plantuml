@@ -1,0 +1,37 @@
+@startuml managePassengers_sequence_diagram
+
+actor HướngDẫnViên
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhQuảnLýHànhKhách
+
+HướngDẫnViên -> HệThống: Chọn chức năng quản lý hành khách
+activate HệThống
+
+HệThống -> CơSởDữLiệu: Truy vấn danh sách hành khách hiện tại
+activate CơSởDữLiệu
+CơSởDữLiệu --> HệThống: Lấy danh sách hành khách hiện tại
+deactivate CơSởDữLiệu
+
+HệThống --> MànHìnhQuảnLýHànhKhách: Hiển thị danh sách hành khách cho hướng dẫn viên
+
+HướngDẫnViên -> MànHìnhQuảnLýHànhKhách: Thay đổi thông tin hành khách
+activate MànHìnhQuảnLýHànhKhách
+
+MànHìnhQuảnLýHànhKhách -> HệThống: Danh sách hành khách đã thay đổi
+deactivate MànHìnhQuảnLýHànhKhách
+
+HệThống -> CơSởDữLiệu: Danh sách hành khách đã thay đổi
+activate CơSởDữLiệu
+
+alt Danh sách hành khách đã thay đổi
+  CơSởDữLiệu --> HệThống: Lưu danh sách hành khách mới vào cơ sở dữ liệu
+  deactivate CơSởDữLiệu
+  HệThống --> HướngDẫnViên: Hiển thị thông báo - Danh sách hành khách đã được cập nhật
+else Danh sách hành khách không thay đổi
+  HệThống --> HướngDẫnViên: Hiển thị thông báo - Không có thay đổi danh sách hành khách
+end
+
+deactivate HệThống
+
+@enduml

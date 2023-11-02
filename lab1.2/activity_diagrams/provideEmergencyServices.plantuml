@@ -1,4 +1,4 @@
-@startuml emergencyService_activity_diagram
+@startuml provideEmergencyService_activity_diagram
 |Người dùng|
 start
 :Chọn chức năng yêu cầu dịch vụ khẩn cấp;
