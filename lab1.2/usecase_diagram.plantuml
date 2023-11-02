@@ -15,9 +15,11 @@ rectangle Hệ_thống {
   usecase (Quản lý lịch trình) as UC_Lich_trinh
   usecase (Quản lý hành khách) as UC_Hanh_khach
   usecase (Cung cấp dịch vụ khẩn cấp) as UC_Khan_cap
+  usecase (Cung cấp thông tin về nơi ở) as UC_Noi_o
 
   HDV -- UC_HD_Dia_diem
   HDV -- UC_HD_Video
+  HDV -- UC_Noi_o
   HDV -- UC_HD_Dia_phuong
   HDV -- UC_Thoi_tiet
   HDV -- UC_Ẩm_thực
