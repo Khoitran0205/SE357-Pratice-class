@@ -1,0 +1,24 @@
+@startuml provideFoodInfo_sequence_diagram
+
+actor HướngDẫnViên
+control HệThống
+entity CơSởDữLiệu
+boundary MànHìnhThôngTinẨmThực
+
+HướngDẫnViên -> HệThống: Chọn chức năng xem thông tin ẩm thực
+activate HệThống
+
+HệThống -> HệThống: Kiểm tra yêu cầu thông tin ẩm thực
+alt Yêu cầu thông tin ẩm thực
+  HệThống -> CơSởDữLiệu: Truy vấn dữ liệu ẩm thực
+  activate CơSởDữLiệu
+  CơSởDữLiệu --> HệThống: Lấy thông tin ẩm thực từ dịch vụ ẩm thực
+  deactivate CơSởDữLiệu
+  HệThống --> MànHìnhThôngTinẨmThực: Hiển thị thông tin ẩm thực cho người dùng
+else Yêu cầu không hợp lệ
+  HệThống --> MànHìnhThôngTinẨmThực: Hiển thị thông báo lỗi - Yêu cầu không hợp lệ
+end
+
+deactivate HệThống
+
+@enduml
