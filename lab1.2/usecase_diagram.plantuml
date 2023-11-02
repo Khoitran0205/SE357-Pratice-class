@@ -1,4 +1,4 @@
-@startuml
+@startuml usecase_diagram
 left to right direction
 actor Hướng_dẫn_viên_du_lịch as HDV
 actor Khách_du_lịch as Khách

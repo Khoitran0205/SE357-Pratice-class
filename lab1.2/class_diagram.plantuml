@@ -1,4 +1,4 @@
-@startuml Lab1.2_class_diagram
+@startuml class_diagram
 
 class Users {
     id: Integer,
