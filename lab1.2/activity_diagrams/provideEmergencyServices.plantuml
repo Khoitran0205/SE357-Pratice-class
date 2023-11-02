@@ -1,0 +1,22 @@
+@startuml emergencyService_activity_diagram
+|Người dùng|
+start
+:Chọn chức năng yêu cầu dịch vụ khẩn cấp;
+|Hệ thống|
+|Dịch vụ khẩn cấp|
+if (Chức năng đã chọn?) then (yes)
+  :Người dùng nhập thông tin cần thiết;
+  |Hệ thống|
+  :Gửi yêu cầu dịch vụ khẩn cấp tới dịch vụ khẩn cấp;
+  |Dịch vụ khẩn cấp|
+  :Xử lý yêu cầu và cung cấp dịch vụ khẩn cấp;
+  :Liên lạc với người dùng để xác nhận thông tin;
+  |Hệ thống|
+  :Xác nhận thông tin với người dùng;
+  :Hiển thị thông báo - Dịch vụ khẩn cấp đã được gửi;
+else (no)
+  :Hiển thị thông báo lỗi - Chưa chọn chức năng yêu cầu dịch vụ khẩn cấp;
+endif
+
+stop
+@enduml
