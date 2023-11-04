@@ -9,7 +9,7 @@ rectangle Hệ_thống {
   usecase (Hướng dẫn thông tin địa điểm) as UC_HD_Dia_diem
   usecase (Hướng dẫn trực tiếp qua video) as UC_HD_Video
   usecase (Cung cấp thông tin thời tiết) as UC_Thoi_tiet
-  usecase (Cung cấp thông tin về ẩm thực) as UC_Ẩm_thực
+  usecase (Cung cấp thông tin về ẩm thực) as UC_Am_thuc
   usecase (Đánh giá chuyến đi) as UC_Danh_gia
   usecase (Quản lý lịch trình) as UC_Lich_trinh
   usecase (Quản lý hành khách) as UC_Hanh_khach
@@ -20,7 +20,7 @@ rectangle Hệ_thống {
   HDV -- UC_HD_Video
   HDV -- UC_Noi_o
   HDV -- UC_Thoi_tiet
-  HDV -- UC_Ẩm_thực
+  HDV -- UC_Am_thuc
   Khách -- UC_Danh_gia
   HDV -- UC_Lich_trinh
   HDV -- UC_Hanh_khach
