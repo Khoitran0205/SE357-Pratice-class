@@ -45,6 +45,7 @@ class VistLocations {
 class Tours {
     id: Integer,
     tour_guide_id: Integer,
+    capacity: Integer,
     start_date: Date,
     end_date: Date,
 }
@@ -98,6 +99,7 @@ class News {
 
 class Bookings {
     id: Integer,
+    amount_people: Integer,
     tour_id: String,
     user_id: String,
     status: String,
