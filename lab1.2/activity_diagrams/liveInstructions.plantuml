@@ -8,9 +8,9 @@ if (Khách hàng đã chọn?) then (yes)
   :Truy vấn thông tin về khách hàng;
   :Lấy thông tin về khách hàng từ cơ sở dữ liệu;
   |Hệ thống|
-  :Bắt đầu cuộc hướng dẫn qua video;
+  :Bắt đầu cuộc hướng dẫn qua tin nhắn;
   |Cơ sở dữ liệu|
-  :Mở kết nối video;
+  :Mở kết nối tin nhắn;
 else (no)
   :Hiển thị thông báo lỗi - Khách hàng chưa chọn;
 endif
