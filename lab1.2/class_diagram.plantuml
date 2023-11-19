@@ -68,8 +68,8 @@ class TourTourists {
 
 class Reviews {
     id: Integer,
-    tour_id: String,
-    user_id: String,
+    tour_id: Integer,
+    user_id: Integer,
     stars: Integer,
     comment: String,
 }
@@ -100,8 +100,8 @@ class News {
 class Bookings {
     id: Integer,
     amount_people: Integer,
-    tour_id: String,
-    user_id: String,
+    tour_id: Integer,
+    user_id: Integer,
     status: String,
 }
 
