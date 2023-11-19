@@ -3,19 +3,19 @@
 |Người dùng|
 start
 repeat
-  :Người dùng nhập tên đăng nhập và mật khẩu;
+  :(1) Người dùng nhập tên đăng nhập và mật khẩu;
   |Hệ thống|
   if (Thông tin hợp lệ?) then (yes)
-    :Hệ thống kiểm tra thông tin đăng nhập;
+    :(2) Hệ thống kiểm tra thông tin đăng nhập;
     |Cơ sở dữ liệu|
     if (Đúng tên đăng nhập và mật khẩu?) then (yes)
-      :Đăng nhập thành công;
+      :(3) Đăng nhập thành công;
       stop
     else (no)
-      :Hiển thị thông báo lỗi;
+      :(4) Hiển thị thông báo lỗi;
     endif
   else (no)
-    :Hiển thị thông báo lỗi;
+    :(5) Hiển thị thông báo lỗi;
   endif
 repeat while (Thông tin không hợp lệ?);
 stop

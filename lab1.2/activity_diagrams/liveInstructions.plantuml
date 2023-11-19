@@ -1,18 +1,18 @@
 @startuml liveInstructions_activity_diagram
 |Hướng dẫn viên|
 start
-:Chọn khách hàng cần hướng dẫn;
+:(1) Chọn khách hàng cần hướng dẫn;
 |Hệ thống|
 if (Khách hàng đã chọn?) then (yes)
   |Cơ sở dữ liệu|
-  :Truy vấn thông tin về khách hàng;
-  :Lấy thông tin về khách hàng từ cơ sở dữ liệu;
+  :(2)Truy vấn thông tin về khách hàng;
+  :(3) Lấy thông tin về khách hàng từ cơ sở dữ liệu;
   |Hệ thống|
-  :Bắt đầu cuộc hướng dẫn qua tin nhắn;
+  :(4) Bắt đầu cuộc hướng dẫn qua tin nhắn;
   |Cơ sở dữ liệu|
-  :Mở kết nối tin nhắn;
+  :(5) Mở kết nối tin nhắn;
 else (no)
-  :Hiển thị thông báo lỗi - Khách hàng chưa chọn;
+  :(6) Hiển thị thông báo lỗi - Khách hàng chưa chọn;
 endif
 
 stop
