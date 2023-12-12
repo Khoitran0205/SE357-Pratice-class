@@ -2,9 +2,9 @@ Xây dựng hệ thống hỗ trợ hướng dẫn viên du lịch trực tuyế
 
 Contributors:
 
- -Leader: Trần Quang Tin - 20522018 - https://github.com/Khoitran0205
+ -Leader: Trần Duy Khôi - 20521483 - https://github.com/Khoitran0205
  
- -Member: Trần Duy Khôi - 20521483 - https://github.com/Withyou11
+ -Member: Trần Quang Tin - 20522018 - https://github.com/Withyou11
  
 Supervisors:
 
